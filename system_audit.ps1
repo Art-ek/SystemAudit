@@ -29,7 +29,7 @@
 
     Constructors.
     InfObj() - creates an object for local system only
-    InfObj([String]$computerName) - creates all objects from regardless (empty ones too)
+    InfObj([String]$computerName) - creates all objects (empty ones too)
     InfObj([String]$computerName,[Object]$masterpassword) - you will need to provide user and password to collect from remote hosts
 
     
@@ -46,24 +46,24 @@
 
     StartAudit() - creates an [InfObj] for local machine and save it in our holder array
     StartAudit([String]$computers,[Password]$pass) - it will create [InfObj]
-    only if second parameter is set to TRUE ([password]::true), if set to ([password]::false) 
-    it will create an "empty object" with only 2 properties (computername and alive)
+    only if the second parameter is set to TRUE ([password]::true), but if set to ([password]::false) 
+    it will create an array with "empty objects" and only 2 properties populated (computername and alive)
 
 
 .EXAMPLE
-	$obj=[startAudit]::new()   -creates a new object for local machine
-    $obj.holder                -displays all the properties with their values, as it is an array plese use $obj.holder[0]
+    $obj=[startAudit]::new()   -creates a new object for local machine
+    $obj.holder                -displays all the properties with their values, as it is an array plese use $obj.holder[x] (x = array index)
     $obj.holder[0].osinfo, 
     $obj.holder[0].shares
     $obj.holder[0].disks 
     $obj | get-member to see all the methods and properties for your $obj
     $obj.holder | gm to see even more methods and properties for the holder's array
     $obj.doReport($obj.holder) - creates a simple html report and saves it in you home directory
-    $obj.fetchAllData($obj.holder) gets "fresh" data for all object's properties
+    $obj.fetchAllData($obj.holder) gets "fresh" data 
 
 
 .EXAMPLE
-	$obj=[startAudit]::new('.\computers.txt',[password]::True) - creates objects for all the IP's found in a file, 
+    	$obj=[startAudit]::new('.\computers.txt',[password]::True) - creates objects for all the IP's found in a file, 
     but only if you provide correct user name and password. You will get access denied otherwise.
 
 
