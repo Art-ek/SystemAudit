@@ -462,7 +462,7 @@ class StartAudit  {
         }catch{
             write-host $_.exception.message  '
             
-            Please specify a file you want which contain list of IPs
+            Please specify a file you want to use which contain list of IP addresses
             example $object=[startaudit]::new(".\computers.txt",[password]::True)
             
             '
