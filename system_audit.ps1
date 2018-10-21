@@ -132,7 +132,7 @@ class InfObj {
      }
 
     #Basic constructor, it will initialize 2 variables only (computername and alive), purpose ? for learning OOP :)
-    #Once object is created, you will need to play with the object to populate all the variables with some data ;) 
+    #Once object is created, you will need to play with the object itself to populate all the variables with some data ;) 
 
     InfObj([String]$computerName){
     
