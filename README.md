@@ -1,4 +1,4 @@
-# SystemAudit is a simple system inventory script for Windows system only
+# SystemAudit is a simple system inventory script for Windows OS only
 
  SystemAudit will show you how cool is a task automation using OOP in Powershell.
  What is it for?
