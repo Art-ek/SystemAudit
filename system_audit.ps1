@@ -5,7 +5,7 @@
 <#
 
 .SYNOPSIS
-    SystemAudit will show you how cool is a task automation using OOP in Powershell.
+    SystemAudit will show you how cool is task automation using OOP in Powershell.
     It is a system inventory script or system audit if you prefer. What is it for?
     You can gather some information about your local or even remote systems and create a trivial html report.
     Also with few small modifications you could customise nearly everything and add more details to the output.
