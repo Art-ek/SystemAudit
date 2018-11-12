@@ -6,3 +6,6 @@
  Also with few small modifications you could customise nearly everything and add more details to the output.
 
     IMPORTANT !! YOU'D NEED AT LEAST POWERSHELL 5.x as I decided to use classes !! goodies added to ver 5.
+    
+The following link will take you to the assosiated article,
+https://www.linkedin.com/pulse/powershell-automation-sysadmins-real-life-oop-example-artur-les/
