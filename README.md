@@ -8,4 +8,9 @@
     IMPORTANT !! YOU'LL NEED AT LEAST POWERSHELL 5.x as I decided to use classes !! goodies added to ver 5.
     
 The following link will take you to the assosiated article,
+
+https://art-ek.github.io/SystemAudit/
+
+or LinkedIn
+
 https://www.linkedin.com/pulse/powershell-automation-sysadmins-real-life-oop-example-artur-les/
